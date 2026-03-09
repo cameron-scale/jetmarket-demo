@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AeroVault – Cessna Citation X</title>
+  <meta name="description" content="Demo aircraft listing for Cessna Citation X" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#070A0F;
+      --bg2:#0C1321;
+      --text:#F5F6F8;
+      --muted:rgba(245,246,248,.65);
+      --line:rgba(245,246,248,.09);
+      --gold:rgba(214,174,58,.85);
+      --goldPanel:rgba(214,174,58,.08);
+      --card:rgba(7,10,15,.72);
+      --shadow:0 18px 60px rgba(0,0,0,.65);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:var(--text);font-family:Inter,system-ui,Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+    a{color:var(--text);text-decoration:none}
+    header{position:sticky;top:0;z-index:10;padding:16px 22px;border-bottom:1px solid var(--line);
+           background:linear-gradient(180deg,rgba(7,10,15,.92),rgba(7,10,15,.62));backdrop-filter:blur(12px);
+           display:flex;align-items:center;justify-content:space-between}
+    .brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.5px}
+    .brand:before{content:"";width:10px;height:10px;border-radius:999px;background:var(--gold);
+                  box-shadow:0 0 24px rgba(214,174,58,.55)}
+    nav{display:flex;gap:16px}
+    nav a{padding:10px 12px;border-radius:999px;border:1px solid transparent;transition:border-color .15s ease}
+    nav a:hover{border-color:var(--line);background:rgba(255,255,255,.02)}
+    main{max-width:1100px;margin:0 auto;padding:34px 22px}
+    .hero img{width:100%;display:block;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--line)}
+    .panel{margin-top:-110px;position:relative;z-index:2;max-width:760px;border-radius:18px;
+           border:1px solid rgba(245,246,248,.12);background:var(--card);backdrop-filter:blur(16px);
+           box-shadow:var(--shadow);padding:26px 26px}
+    .title{display:flex;align-items:baseline;gap:14px}
+    .title h1{margin:0;font-family:'Playfair Display',serif;font-size:30px;letter-spacing:.2px}
+    .title span{color:var(--muted);font-size:14px}
+    .subtitle{margin:10px 0 14px;color:var(--muted);line-height:1.55;max-width:62ch}
+    .meta{display:flex;gap:12px;flex-wrap:wrap}
+    .badge{border:1px solid rgba(214,174,58,.18);background:var(--goldPanel);
+           padding:8px 10px;border-radius:999px;font-size:13px}
+    .cta{margin-top:16px;display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;
+         border-radius:999px;background:rgba(255,255,255,.02);border:1px solid rgba(214,174,58,.35);
+         transition:transform .15s ease,border-color .15s ease;font-weight:500}
+    .cta:hover{transform:translateY(-1px);border-color:rgba(214,174,58,.65)}
+    footer{padding:26px 22px;color:var(--muted);border-top:1px solid var(--line)}
+    @media(max-width:900px){main{padding:26px 14px}.panel{margin-top:-90px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">AeroVault</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="https://unsplash.com/photos/ogUyaf8JWA4/download?force=true" alt="Private aircraft cabin" />
+    </div>
+
+    <section class="panel">
+      <div class="title">
+        <h1>Cessna Citation X</h1>
+        <span>Demo listing</span>
+      </div>
+      <p class="subtitle">High-speed midsize private jet demo listing for the AeroVault marketplace concept.</p>
+      <div class="meta">
+        <span class="badge">Range: 3,300 nm</span>
+        <span class="badge">Seats: 9</span>
+        <span class="badge">Mach: 0.935</span>
+        <span class="badge">Crew: 2</span>
+      </div>
+      <a class="cta" href="inventory.html">← Back to inventory</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 AeroVault · Demo marketplace concept (not real listings)
+  </footer>
+</body>
+</html>
