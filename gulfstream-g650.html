@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AeroVault — Gulfstream G650</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070A0F;--panel:rgba(10,14,24,.78);--gold:#D6AE3A;--text:#F5F6F8;}
+body{margin:0;font-family:Inter,sans-serif;color:var(--text);background:radial-gradient(1200px 700px at 20% 10%,rgba(214,174,58,0.2),transparent),#070A0F;min-height:100vh;}
+header{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:rgba(0,0,0,.2);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);}
+.brand{font-family:Playfair Display,serif;font-size:18px;letter-spacing:.08em;text-transform:uppercase;color:var(--text);text-decoration:none;}
+.nav a{margin-left:18px;color:rgba(245,246,248,.72);text-decoration:none;font-size:14px;}
+.nav a:hover{color:var(--text);}
+main{padding:42px 24px 80px;max-width:1100px;margin:0 auto;}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:stretch;}
+.hero img{width:100%;height:420px;object-fit:cover;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+.panel{background:var(--panel);border:1px solid rgba(214,174,58,.12);border-radius:16px;padding:22px;}
+h1{font-family:Playfair Display,serif;font-size:34px;margin:0 0 6px;}
+.sub{margin:0 0 18px;color:rgba(245,246,248,.72);}
+.meta{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 0;}
+.badge{border:1px solid rgba(214,174,58,.18);background:rgba(214,174,58,.08);color:var(--text);padding:8px 10px;border-radius:999px;font-size:13px;}
+.cta{margin-top:18px;display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;background:rgba(214,174,58,.18);border:1px solid rgba(214,174,58,.35);text-decoration:none;color:var(--text);font-weight:500;}
+footer{padding:26px 24px;color:rgba(245,246,248,.5);border-top:1px solid rgba(255,255,255,.08);}
+@media(max-width:900px){.hero{grid-template-columns:1fr;}main{padding:28px 20px 70px;}}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">AeroVault</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="inventory.html">Inventory</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<img src="https://unsplash.com/photos/jGQWEFgYxxA/download?force=true" alt="Gulfstream G650">
+<div class="panel">
+<h1>Gulfstream G650</h1>
+<p class="sub">Flagship private jet demo listing for AeroVault.</p>
+<div class="meta">
+<span class="badge">$62M</span>
+<span class="badge">Range 7,000+ nm</span>
+<span class="badge">Seats 16</span>
+<span class="badge">Mach 0.925</span>
+</div>
+<a class="cta" href="inventory.html">← Back to inventory</a>
+</div>
+</section>
+</main>
+<footer>© 2026 AeroVault · Demo marketplace concept.</footer>
+</body>
+</html>
