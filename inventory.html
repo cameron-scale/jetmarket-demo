@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AeroVault | Inventory</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap">
+<style>
+:root { --bg:#070A0F; --text:#F5F6F8; --muted:#A8B2C4; --gold:#C9A34A; }
+body {margin:0; background: radial-gradient(1200px 800px at 30% 20%, rgba(255,255,255,.07), transparent), linear-gradient(180deg,#070A0F,#05070B); color:var(--text); font-family:Inter,sans-serif;}
+a {color: inherit; text-decoration:none;}
+.header {display:flex; justify-content:space-between; align-items:center; padding:18px 40px; position:sticky; top:0; background: linear-gradient(180deg, rgba(7,10,15,.9), rgba(7,10,15,.4)); backdrop-filter: blur(8px);}
+.brand {font-family:"Playfair Display",serif; letter-spacing:.4px; font-weight:700;}
+.nav a {margin-left:18px; font-weight:500; color:var(--muted);}
+.nav a.active {color: var(--text);}
+.hero {max-width: 1020px; padding: 48px 40px; margin: 0 auto;}
+h1 {font-family:"Playfair Display",serif; font-size:48px; margin:0 0 14px;}
+.sub {color: var(--muted); max-width: 720px; line-height:1.6;}
+.grid {display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:18px; padding: 20px 40px 60px; max-width: 1080px; margin:0 auto;}
+.card {border: 1px solid rgba(255,255,255,.06); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border-radius: 16px; overflow:hidden; box-shadow: 0 10px 40px rgba(0,0,0,.35);}
+.card img {width:100%; height:160px; object-fit:cover; display:block;}
+.card-body {padding: 16px 16px 18px;}
+.meta {display:flex; justify-content:space-between; color:var(--muted); font-size: 13px;}
+h3 {font-family:"Playfair Display",serif; margin:10px 0 8px; font-size: 22px;}
+.specs {display:flex; flex-wrap:wrap; gap:10px; margin-top: 10px;}
+.badge {padding: 8px 10px; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; font-size: 12px; color: var(--muted);}
+.cta {margin-top:14px; display:inline-flex; align-items:center; gap:8px; padding: 10px 12px; border-radius:999px; border:1px solid rgba(176,139,46,.7); color: var(--gold);}
+.footer {padding: 40px; color: var(--muted); font-size: 13px; border-top: 1px solid rgba(255,255,255,.07);}
+</style>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html">AeroVault</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a class="active" href="inventory.html">Inventory</a>
+  </nav>
+</header>
+<section class="hero">
+  <h1>Inventory</h1>
+  <p class="sub">Demo listings to illustrate the marketplace flow. Click a listing to open the product page.</p>
+</section>
+<section class="grid">
+  <a class="card" href="gulfstream-g650.html">
+    <img src="https://unsplash.com/photos/jGQWEFgYxxA/download?force=true" alt="Gulfstream G650">
+    <div class="card-body">
+      <div class="meta"><span>Private Jet</span><span>Range</span></div>
+      <h3>Gulfstream G650</h3>
+      <div class="meta"><span>$62M</span><span>7,000+ nm</span></div>
+      <div class="specs">
+        <span class="badge">16 seats</span>
+        <span class="badge">Mach 0.925</span>
+      </div>
+      <div class="cta">View listing →</div>
+    </div>
+  </a>
+  <a class="card" href="cessna-citationx.html">
+    <img src="https://unsplash.com/photos/OjxpywWo9HI/download?force=true" alt="Cessna Citation X">
+    <div class="card-body">
+      <div class="meta"><span>Private Jet</span><span>Range</span></div>
+      <h3>Cessna Citation X</h3>
+      <div class="meta"><span>$22M</span><span>3,300 nm</span></div>
+      <div class="specs">
+        <span class="badge">8 seats</span>
+        <span class="badge">Mach 0.935</span>
+      </div>
+      <div class="cta">View listing →</div>
+    </div>
+  </a>
+  <a class="card" href="piper-meridian.html">
+    <img src="https://unsplash.com/photos/ogUyaf8JWA4/download?force=true" alt="Piper Meridian interior">
+    <div class="card-body">
+      <div class="meta"><span>Turboprop</span><span>Range</span></div>
+      <h3>Piper Meridian</h3>
+      <div class="meta"><span>$3M</span><span>1,000 nm</span></div>
+      <div class="specs">
+        <span class="badge">6 seats</span>
+        <span class="badge">Glass cockpit</span>
+      </div>
+      <div the class="cta">View listing →</div>
+    </div>
+  </a>
+</section>
+<footer class="footer">© 2026 AeroVault · Demo marketplace concept.</footer>
+</body>
+</html>
